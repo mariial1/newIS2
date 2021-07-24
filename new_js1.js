@@ -604,16 +604,14 @@ let users = [
         body: 'cupiditate quo est a modi nesciunt soluta\nipsa voluptas error itaque dicta in\nautem qui minus magnam et distinctio eum\naccusamus ratione error aut'
     }
 ]
-
+document.write(`<div class = "wrap">`)
 for (let user of users) {
-    document.write(`<div class = "wrap">
-                        <div class="post-card">
-                            <h3>${user.id} - ${user.title}</h3> 
-                            <p>${user.body} </p>
-                        </div>
-                    </div>`)
+        document.write (`<div class="post-card">
+                     <h3>${user.id} - ${user.title}</h3> 
+                     <p>${user.body} </p>
+                </div>`)
 }
-
+document.write(`</div>`)
 
 
 
